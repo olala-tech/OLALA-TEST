@@ -5148,6 +5148,39 @@ await client.sendMessage(m.chat, { image: { url: pp },
     await handleAnswer(m, args, client);
     break;
 
+  case 'pic':
+    try {
+      const isReply = m.quoted && m.quoted.sender;
+      const targetJid = isReply ? m.quoted.sender : m.sender;
+
+      let ppUrl;
+      try {
+        ppUrl = await client.profilePictureUrl(targetJid, 'image');
+      } catch (e) {
+        ppUrl = 'https://i.ibb.co/4Z9YvRh/default.jpg'; // fallback/default profile picture
+      }
+
+      await client.sendMessage(
+        m.chat,
+        {
+          image: { url: ppUrl },
+          caption: `📸 Profile picture of @${targetJid.split('@')[0]}`,
+          mentions: [targetJid]
+        },
+        { quoted: m }
+      );
+    } catch (err) {
+      console.error(err);
+      await client.sendMessage(
+        m.chat,
+        {
+          text: '❌ Could not fetch profile picture.',
+        },
+        { quoted: m }
+      );
+    }
+    break;
+
 //========================================================================================================================//        
         default: {
           if (cmd && budy.toLowerCase() != undefined) {
