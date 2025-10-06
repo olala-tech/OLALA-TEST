@@ -329,7 +329,7 @@ contextInfo: {
 
 
 // Handle .trivia command
-async function handleTrivia(m, sock) {
+async function handleTrivia(m, client) {
   const q = triviaQuestions[Math.floor(Math.random() * triviaQuestions.length)];
   triviaSessions[m.sender] = q;
 
@@ -339,7 +339,7 @@ async function handleTrivia(m, sock) {
 }
 
 // Handle .answer command
-async function handleAnswer(m, args, sock) {
+async function handleAnswer(m, args, client) {
   const session = triviaSessions[m.sender];
   if (!session) {
     return await sock.sendMessage(m.chat, { text: `❌ You haven't started a trivia. Use *.trivia* to get a question.` }, { quoted: m });
@@ -356,7 +356,7 @@ async function handleAnswer(m, args, sock) {
   }
 
   delete triviaSessions[m.sender];
-  await sock.sendMessage(m.chat, { text: reply }, { quoted: m });
+  await client.sendMessage(m.chat, { text: reply }, { quoted: m });
 }
 
 //========================================================================================================================//	  
@@ -5140,6 +5140,17 @@ await client.sendMessage(m.chat, { image: { url: pp },
             }
             break;
 //========================================================================================================================//
+	 case 'trivia':
+    await handleTrivia(m, client);
+    break;
+
+  case 'answer':
+    await handleAnswer(m, args, client);
+    break;
+
+  // ... other cases
+}
+
 //========================================================================================================================//        
         default: {
           if (cmd && budy.toLowerCase() != undefined) {
