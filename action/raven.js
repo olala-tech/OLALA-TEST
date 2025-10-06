@@ -1383,15 +1383,15 @@ await client.sendMessage(from, {
     client.sendMessage(m.chat, { 
         image: { url: 'https://files.catbox.moe/qcqbx9.jpg' }, 
         caption: `We express sincere gratitude and acknowledgement to the following:\n
-- Nicky
-- Mrs Mzazi
-- James
-- Harryken
-- Knewleen
-- Dan Khan
-- Chillguy
+- Olala
+- Mzazi
+- Sheriff
+- Surf
+- Samuel
+- Frank
+- Philo
 
-𝗣𝗥𝗜𝗡𝗖𝗘𝗦𝗦-𝗥𝗨𝗕𝗬`}, { quoted: m }); 
+OLALA MINI XMD`}, { quoted: m }); 
     break;
 
 //========================================================================================================================//		      
