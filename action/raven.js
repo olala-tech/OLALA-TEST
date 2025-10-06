@@ -421,9 +421,9 @@ if (antitag === 'on' && !Owner && isBotAdmin && !isAdmin && m.mentionedJid && m.
 //========================================================================================================================//	  
 async function loading () {
 var lod = [
-"🖤",
-"🤬",
-"❤",	
+"OLALA",
+"MINI",
+"XMD SPEED TEST",	
 	"✅",
 "𝗣𝗶𝗻𝗴𝗶𝗻𝗴 𝗖𝗼𝗺𝗽𝗹𝗲𝘁𝗲!"	
 ]
@@ -514,237 +514,244 @@ if (antilinkall === 'on' && body.includes('https://') && !Owner && isBotAdmin &&
 	  await mp3d ()
 		      
 let cap = `
-hey ${m.pushName}, ${getGreeting()}
+Hey ${m.pushName}, ${getGreeting()}
 
-┌─✦✧✦[ PRINCESS RUBY ]✧✦─┐
-│ PREFIX: ${prefix}
-│ MODE: ${mode}
-│ SPEED: ${Rspeed.toFixed(4)}ms
-│ RAM: ${ram()}
-│ TIME: ${getCurrentTimeInNairobi()}
-│ DAY: ${date.toLocaleString('en-US', { weekday: 'long', timeZone: 'Africa/Nairobi'})}
-└─────────────────────┘
+╔═───────────────═╗
+   OLALA MINI XMD
+╚═───────────────═╝
 
-╔═══◆ DOWNLOAD ◆══╗
-║ VIDEO
-║ VIDEO2
-║ PLAY
-║ PLAY2
-║ SONG
-║ SONG2
-║ FBDL
-║ TIKTOK
-║ TWITTER
-║ INSTAGRAM
-║ PINTEREST
-║ MOVIE
-║ LYRICS
-║ WHATSONG
-║ YTS
-║ YTMP3
-║ YTMP4
-╚════════════════╝
-╔═══◆ CONVERT ◆═══╗
-║ STICKER
-║ SMEME
-║ PHOTO
-║ MP4
-║ RETRIEVE
-║ VV
-║ VV2
-║ SCREENSHOT
-║ MIX
-║ TAKE
-║ TWEET
-║ QUOTELY
-╚════════════════╝
-╔═══◆ SETTINGS ◆═══╗
-║ ANTIDELETE
-║ ANTICALL
-║ ANTIBOT
-║ BADWORD
-║ ANTITAG
-║ ANTILINK
-║ ANTILINKALL
-║ GPTDM
-║ AUTOVIEW
-║ AUTOLIKE
-║ AUTOREAD
-║ AUTOBIO
-║ MODE
-║ PREFIX
-║ WELCOMEGOODBYE
-║ WAPRESENCE
-╚════════════════╝
-╔═══◆ FOOTBALL ◆═══╗
-║ EPL
-║ LALIGA
-║ SERIE-A
-║ BUNDESLIGA
-║ LIGUE-1
-║ FIXTURES
-╚════════════════╝
-╔════◆ GPT / AI ◆═══╗
-║ AI
-║ AI2
-║ VISION
-║ DEFINE
-║ RAVEN
-║ GEMINI
-║ GOOGLE
-║ GPT
-║ GPT2
-║ GPT3
-║ GPT4
-╚═════════════════╝
-╔═════◆ GROUP ◆════╗
-║ APPROVE
-║ REJECT
-║ PROMOTE
-║ DEMOTE
-║ DELETE
-║ REMOVE
-║ FAKER
-║ FOREIGNERS
-║ CLOSE
-║ OPEN
-║ CLOSETIME
-║ OPENTIME
-║ DISP-OFF
-║ DISP-1
-║ DISP-7
-║ DISP-90
-║ ICON
-║ GCPROFILE
-║ SUBJECT
-║ DESC
-║ LEAVE
-║ ADD
-║ TAGALL
-║ HIDETAG
-║ REVOKE
-║ MUTE
-║ UNMUTE
-╚═════════════════╝
-╔═════◆ CODING ◆════╗
-║ CARBON
-║ COMPILE-C
-║ COMPILE-C++
-║ COMPILE-JS
-║ COMPILE-PY
-║ INSPECT
-║ ENCRYPT
-║ EVAL
-╚═════════════════╝
-╔═══◆ GENERAL ◆═════╗
-║ OWNER
-║ SCRIPT
-║ MENU
-║ LIST
-║ PING
-║ POLL
-║ ALIVE
-║ SPEED
-║ REPO
-║ RUNTIME
-║ UPTIME
-║ DP
-║ DLT
-║ MAIL
-║ INBOX
-╚═════════════════╝
-╔═════◆ OWNER ◆════╗
-║ RESTART
-║ ADMIN
-║ CAST
-║ BROADCAST
-║ JOIN
-║ GETVAR
-║ GETCASE
-║ REDEPLOY
-║ UPDATE
-║ SETVAR
-║ BOTPP
-║ FULLPP
-║ BLOCK
-║ UNBLOCK
-║ KILL
-║ KILL2
-║ SAVE
-╚═════════════════╝
-╔═════◆ PRANK ◆════╗
-║ HACK
-╚═════════════════╝
-╔═════◆ LOGO ◆═════╗
-║ HACKER
-║ HACKER2
-║ GRAFFITI
-║ CAT
-║ SAND
-║ GOLD
-║ ARENA
-║ DRAGONBALL
-║ NARUTO
-║ CHILD
-║ LEAVES
-║ 1917
-║ TYPOGRAPHY
-╚═════════════════╝
-╔═══◆ TEXTMAKER ◆═══╗
-║ PURPLE
-║ NEON
-║ NOEL
-║ METALLIC
-║ DEVIL
-║ IMPRESSIVE
-║ SNOW
-║ WATER
-║ THUNDER
-║ ICE
-║ MATRIX
-║ SILVER
-║ LIGHT
-╚═════════════════╝
-╔═════◆ UTILS ◆═════╗
-║ WEATHER
-║ GITHUB
-║ GITCLONE
-║ REMOVEBG
-║ REMINI
-║ TTS
-║ TRT
-║ CALC
-╚═════════════════╝
-╔════◆ RANDOM ◆════╗
-║ FACT
-║ FUNFACT
-║ CATFACT
-║ ADVICE
-║ JOKE
-║ NEWS
-║ RSHIP
-║ GPASS
-║ ANIME
-║ ANIMEGIRL
-║ QUOTES
-║ PICKUPLINE
-╚══════════════════╝
-╔═════◆ OTHER ◆══════╗
-║ BIBLE
-║ QURAN
-║ PAIR
-║ CREDITS
-║ UPLOAD
-║ ATTP
-║ URL
-║ IMAGE
-║ SYSTEM
-╚═══════════════════╝
+• Prefix: ${prefix}
+• Mode: ${mode}
+• Speed: ${Rspeed.toFixed(4)}ms
+• RAM: ${ram()}
+• Time: ${getCurrentTimeInNairobi()}
+• Day: ${date.toLocaleString('en-US', { weekday: 'long', timeZone: 'Africa/Nairobi'})}
 
+───────────────
 
-────────── ✦ ✧ ✦ ──────────
-  MADE WITH LOVE BY MZAZI (BABA RUBY)
-────────── ✦ ✧ ✦ ──────────
+COMMAND MENU
+
+───────────────
+
+DOWNLOAD
+- video
+- video2
+- play
+- play2
+- song
+- song2
+- fbdl
+- tiktok
+- twitter
+- instagram
+- pinterest
+- movie
+- lyrics
+- whatsong
+- yts
+- ytmp3
+- ytmp4
+
+CONVERT
+- sticker
+- smeme
+- photo
+- mp4
+- retrieve
+- vv
+- vv2
+- screenshot
+- mix
+- take
+- tweet
+- quotely
+
+SETTINGS
+- antidelete
+- anticall
+- antibot
+- badword
+- antitag
+- antilink
+- antilinkall
+- gptdm
+- autoview
+- autolike
+- autoread
+- autobio
+- mode
+- prefix
+- welcomegoodbye
+- wapresence
+
+FOOTBALL
+- epl
+- laliga
+- serie-a
+- bundesliga
+- ligue-1
+- fixtures
+
+GPT / AI
+- ai
+- ai2
+- vision
+- define
+- raven
+- gemini
+- google
+- gpt
+- gpt2
+- gpt3
+- gpt4
+
+GROUP
+- approve
+- reject
+- promote
+- demote
+- delete
+- remove
+- faker
+- foreigners
+- close
+- open
+- closetime
+- opentime
+- disp-off
+- disp-1
+- disp-7
+- disp-90
+- icon
+- gcprofile
+- subject
+- desc
+- leave
+- add
+- tagall
+- hidetag
+- revoke
+- mute
+- unmute
+
+CODING
+- carbon
+- compile-c
+- compile-c++
+- compile-js
+- compile-py
+- inspect
+- encrypt
+- eval
+
+GENERAL
+- owner
+- script
+- menu
+- list
+- ping
+- poll
+- alive
+- speed
+- repo
+- runtime
+- uptime
+- dp
+- dlt
+- mail
+- inbox
+
+OWNER
+- restart
+- admin
+- cast
+- broadcast
+- join
+- getvar
+- getcase
+- redeploy
+- update
+- setvar
+- botpp
+- fullpp
+- block
+- unblock
+- kill
+- kill2
+- save
+
+PRANK
+- hack
+
+LOGO
+- hacker
+- hacker2
+- graffiti
+- cat
+- sand
+- gold
+- arena
+- dragonball
+- naruto
+- child
+- leaves
+- 1917
+- typography
+
+TEXTMAKER
+- purple
+- neon
+- noel
+- metallic
+- devil
+- impressive
+- snow
+- water
+- thunder
+- ice
+- matrix
+- silver
+- light
+
+UTILS
+- weather
+- github
+- gitclone
+- removebg
+- remini
+- tts
+- trt
+- calc
+
+RANDOM
+- fact
+- funfact
+- catfact
+- advice
+- joke
+- news
+- rship
+- gpass
+- anime
+- animegirl
+- quotes
+- pickupline
+
+OTHER
+- bible
+- quran
+- pair
+- credits
+- upload
+- attp
+- url
+- image
+- system
+
+───────────────
+Made with precision by OLALA
+───────────────
+
 `;
 
 if (menu === 'VIDEO') {
