@@ -5148,9 +5148,6 @@ await client.sendMessage(m.chat, { image: { url: pp },
     await handleAnswer(m, args, client);
     break;
 
-  // ... other cases
-}
-
 //========================================================================================================================//        
         default: {
           if (cmd && budy.toLowerCase() != undefined) {
