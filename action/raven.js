@@ -21,6 +21,7 @@ const uploadToCatbox = require('../lib/catbox');
 const advice = require("badadvice");
 const {c, cpp, node, python, java} = require('compile-run');
 const acrcloud = require("acrcloud");
+const triviaSessions = {};
 const triviaQuestions = [
   { question: "What is the capital of France?", answer: "Paris" },
   { question: "Which planet is known as the Red Planet?", answer: "Mars" },
