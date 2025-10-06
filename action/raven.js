@@ -1059,7 +1059,7 @@ console.log(advice());
 break;
 //========================================================================================================================//
 		  case "updt": {
-			  const repo = "TeddyDommie/Princess-Ruby";
+			  const repo = "OLALA-TECH/OLALA-TEST";
     const botPath = path.join(__dirname, '..'); 
 
     try {
