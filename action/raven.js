@@ -831,7 +831,7 @@ client.sendMessage(m.chat, {
                         contextInfo: {
                             externalAdReply: {
                                 showAdAttribution: true,
-                                title: `𝐏𝐑𝐈𝐍𝐂𝐄𝐒𝐒 𝐑𝐔𝐁𝐘`,
+                                title: `OLALA XMD`,
                                 body: `${runtime(process.uptime())}`,
                                 thumbnail: fs.readFileSync('./Media/Raven.jpg'),
                                 sourceUrl: 'https://wa.me/254798956113?text=Hello+Mzazi+dev+I+need+a+bot',
