@@ -335,14 +335,14 @@ async function handleTrivia(m, client) {
 
   const msg = `🧠 Trivia Time!\n\n${q.question}\n\nReply using *.answer your_answer*`;
 
-  await sock.sendMessage(m.chat, { text: msg }, { quoted: m });
+  await client.sendMessage(m.chat, { text: msg }, { quoted: m });
 }
 
 // Handle .answer command
 async function handleAnswer(m, args, client) {
   const session = triviaSessions[m.sender];
   if (!session) {
-    return await sock.sendMessage(m.chat, { text: `❌ You haven't started a trivia. Use *.trivia* to get a question.` }, { quoted: m });
+    return await client.sendMessage(m.chat, { text: `❌ You haven't started a trivia. Use *.trivia* to get a question.` }, { quoted: m });
   }
 
   const userAnswer = args.join(" ").trim().toLowerCase();
