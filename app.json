@@ -20,7 +20,7 @@
   "success_url": "/",
   "env": {
     "DEV": {
-      "description": "Put any phone numbers you want to be bot owner without + or spaces \",\" Ex: 254798956113",
+      "description": "Put any phone numbers you want to be bot owner without + or spaces \",\" Ex: 254101457182",
       "required": true
     },
     "HEROKU_API": {
@@ -53,7 +53,7 @@
     },
     "MENU_TYPE": {
       "description": "VIDEO, LINK, or IMAGE menu format",
-      "value": "VIDEO",
+      "value": "IMAGE",
       "required": false
     },
     "DATABASE_URL": {
