@@ -20,7 +20,30 @@ const uploadtoimgur = require('../lib/imgur');
 const uploadToCatbox = require('../lib/catbox');
 const advice = require("badadvice");
 const {c, cpp, node, python, java} = require('compile-run');
-const acrcloud = require("acrcloud"); 
+const acrcloud = require("acrcloud");
+const triviaQuestions = [
+  { question: "What is the capital of France?", answer: "Paris" },
+  { question: "Which planet is known as the Red Planet?", answer: "Mars" },
+  { question: "Who wrote 'Romeo and Juliet'?", answer: "Shakespeare" },
+  { question: "What is the smallest prime number?", answer: "2" },
+  { question: "In what year did the Titanic sink?", answer: "1912" },
+  { question: "What is the chemical symbol for gold?", answer: "Au" },
+  { question: "How many continents are there on Earth?", answer: "7" },
+  { question: "Who painted the Mona Lisa?", answer: "Leonardo da Vinci" },
+  { question: "What is the largest ocean on Earth?", answer: "Pacific" },
+  { question: "Which country hosted the 2016 Summer Olympics?", answer: "Brazil" },
+  { question: "Who is known as the father of computers?", answer: "Charles Babbage" },
+  { question: "What is the tallest mountain in the world?", answer: "Mount Everest" },
+  { question: "Which element has the atomic number 1?", answer: "Hydrogen" },
+  { question: "What year did World War II end?", answer: "1945" },
+  { question: "Which movie features the character 'Forrest Gump'?", answer: "Forrest Gump" },
+  { question: "What is the currency of Japan?", answer: "Yen" },
+  { question: "How many legs does a spider have?", answer: "8" },
+  { question: "What is the hardest natural substance on Earth?", answer: "Diamond" },
+  { question: "Who wrote the Harry Potter series?", answer: "J.K. Rowling" },
+  { question: "Which gas do plants absorb from the atmosphere?", answer: "Carbon dioxide" }
+];
+
 const ytdl = require("ytdl-core");
 const Client = new Genius.Client("TUoAEhL79JJyU-MpOsBDkFhJFWFH28nv6dgVgPA-9R1YRwLNP_zicdX2omG2qKE8gYLJat5F5VSBNLfdnlpfJg"); // Scrapes if no key is provided
 const { downloadYouTube, downloadSoundCloud, downloadSpotify, searchYouTube, searchSoundCloud, searchSpotify } = require('../action/wee');
@@ -302,6 +325,39 @@ contextInfo: {
   }
 }
 //========================================================================================================================//
+
+
+// Handle .trivia command
+async function handleTrivia(m, sock) {
+  const q = triviaQuestions[Math.floor(Math.random() * triviaQuestions.length)];
+  triviaSessions[m.sender] = q;
+
+  const msg = `🧠 Trivia Time!\n\n${q.question}\n\nReply using *.answer your_answer*`;
+
+  await sock.sendMessage(m.chat, { text: msg }, { quoted: m });
+}
+
+// Handle .answer command
+async function handleAnswer(m, args, sock) {
+  const session = triviaSessions[m.sender];
+  if (!session) {
+    return await sock.sendMessage(m.chat, { text: `❌ You haven't started a trivia. Use *.trivia* to get a question.` }, { quoted: m });
+  }
+
+  const userAnswer = args.join(" ").trim().toLowerCase();
+  const correctAnswer = session.answer.toLowerCase();
+
+  let reply;
+  if (userAnswer === correctAnswer) {
+    reply = `✅ Correct! Well done.`;
+  } else {
+    reply = `❌ Incorrect.\nThe correct answer was: *${session.answer}*`;
+  }
+
+  delete triviaSessions[m.sender];
+  await sock.sendMessage(m.chat, { text: reply }, { quoted: m });
+}
+
 //========================================================================================================================//	  
     // Push Message To Console
     let argsLog = budy.length > 30 ? `${q.substring(0, 30)}...` : budy;
