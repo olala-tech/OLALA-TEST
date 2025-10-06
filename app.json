@@ -1,21 +1,21 @@
 {
-  "name": "PRINCESS-RUBY",
-  "description": "A simple yet complicated WhatsApp bot, ♤Enjoy♡",
+  "name": "OLALA MINI XMD",
+  "description": "A simple yet powerful WhatsApp bot by OLALA ♤ Enjoy ♡",
   "keywords": [
     "bot",
     "whatsapp",
-    "raven",
+    "olala",
     "whatsapp-stickers",
     "anime",
     "whatsapp-bot",
     "whatsapp-sticker-bot",
-    "whatsapp-botto",
+    "xmd",
     "baileys",
     "baileys-md",
-    "md-bot"
+    "multi-device"
   ],
-  "website": "https://github.com/TeddyDommie/Princess-Ruby#readme",
-  "repository": "https://github.com/TeddyDommie/Princess-Ruby.git",
+  "website": "https://github.com/olala-tech/OLALA-TEST#readme",
+  "repository": "https://github.com/olala-tech/OLALA-TEST.git",
   "logo": "https://files.catbox.moe/hbo2oj.jpg",
   "success_url": "/",
   "env": {
@@ -42,12 +42,13 @@
       "required": true
     },
     "APP_NAME": {
-      "description": "repeat the appname you filled above, lowercase",
+      "description": "Repeat the appname you filled above, lowercase",
+      "value": "olala-mini-xmd",
       "required": true
     },
     "MENU_LINK": {
       "description": "Image URL for menu (if MENU_TYPE is IMAGE)",
-      "value": "https://files.catbox.moe/hbo2oj.jpg",
+      "value": "https://files.catbox.moe/vohq4m.jpg",
       "required": false
     },
     "MENU_TYPE": {
