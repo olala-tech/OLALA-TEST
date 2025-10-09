@@ -4157,7 +4157,7 @@ break;
 
     client.sendMessage(m.chat, { 
         image: { url: `https://files.catbox.moe/3k2jca.jpg` }, 
-        caption: `Hey *${pushname}* 👋,\n\nThis is the official 🌸 *OLALA XMD* GitHub repository.\n\n⭐ Feel free to fork the repo and give it a star to support development.\n\n🔗 Repository:\nhttps://github.com/OLALA-TECH/OLALA XMD\n\n🔐 To connect your WhatsApp, generate a session using this link:\nhttps://princess-ruby-session.onrender.com\n\nAfter getting your SESSION string, place it inside the environment variables along with the required config values, then deploy 🚀.\n\nEnjoy exploring and running Princess-Ruby 💎\n\n— Built with ❤️ by MZAZI™`
+        caption: `Hey *${pushname}* 👋,\n\nThis is the official 🌸 *OLALA XMD* GitHub repository.\n\n⭐ Feel free to fork the repo and give it a star to support development.\n\n🔗 Repository:\nhttps://github.com/OLALA-TECH/OLALA XMD\n\n🔐 To connect your WhatsApp, generate a session using this link:\nhttps://princess-OLALA-TECH-XMD.onrender.com\n\nAfter getting your SESSION string, place it inside the environment variables along with the required config values, then deploy 🚀.\n\nEnjoy exploring and running OLALA-TECH 💎\n\n— Built with ❤️ by OLALA-NET-TECH-KENYA`
     }, { quoted: m });
 
     break;
