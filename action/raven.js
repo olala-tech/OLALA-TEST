@@ -214,7 +214,7 @@ async function handleMessageRevocation(client, revocationMessage) {
     const deletedByFormatted = `@${deletedBy.split('@')[0]}`;
     const sentByFormatted = `@${sentBy.split('@')[0]}`;
 
-    let notificationText = `Princess Ruby Antidelete Report\n\n` +
+    let notificationText = `OLALA XMD ANTIDELETE REPORT\n\n` +
       ` Deleted By: ${deletedByFormatted}\n\n`;
 
 try {
@@ -550,7 +550,7 @@ if (antilinkall === 'on' && body.includes('https://') && !Owner && isBotAdmin &&
   //========================================================================================================================//
   //========================================================================================================================//
     if (cmd && !m.isGroup) {
-      console.log(chalk.black(chalk.bgWhite("[ PRINCESS RUBY ]")), color(argsLog, "turquoise"), chalk.magenta("From"), chalk.green(pushname), chalk.yellow(`[ ${m.sender.replace("@s.whatsapp.net", "")} ]`));
+      console.log(chalk.black(chalk.bgWhite("[ OLALA XMD ]")), color(argsLog, "turquoise"), chalk.magenta("From"), chalk.green(pushname), chalk.yellow(`[ ${m.sender.replace("@s.whatsapp.net", "")} ]`));
     } else if (cmd && m.isGroup) {
       console.log(
         chalk.black(chalk.bgWhite("[ LOGS ]")),
@@ -647,170 +647,204 @@ let cap = `
 │ → welcomegoodbye
 │ → wapresence
 ╰─────────────────────────────╯
+╭─────────────────────────────╮
+│     *FOOTBALL COMMANDS*       
+├─────────────────────────────╯
+╭─────────────────────────────╮
+│ → epl
+│ → laliga
+│ → serie-a
+│ → bundesliga
+│ → ligue-1
+│ → fixtures
+╰─────────────────────────────╯
+╭─────────────────────────────╮
+│     *GPT/AI COMMANDS*       
+├─────────────────────────────╯
+╭─────────────────────────────╮
+│ → ai
+│ → ai2
+│ → vision
+│ → define
+│ → raven
+│ → gemini
+│ → google
+│ → gpt
+│ → gpt2
+│ → gpt3
+│ → gpt4
+╰─────────────────────────────╯
+╭─────────────────────────────╮
+│     *GROUP COMMANDS*       
+├─────────────────────────────╯
+╭─────────────────────────────╮
+│ → approve
+│ →reject 
+│ → promote
+│ → demote
+│ → delete
+│ →remove 
+│ →faker 
+│ →foreigners 
+│ →close 
+│ →open 
+│ → closetime
+│ → opentime
+│ →disp-off 
+│ → disp-1
+│ → disp-7
+│ →disp-90 
+│ → icon
+│ → gcprofile
+│ → subject
+│ → desc
+│ →leave 
+│ →add
+│ → tagall
+│ → hidetag
+│ →revoke 
+│ → mute
+│ → unmute
+│ → listonline
+│ → antilink
+│ → groupmention
+╰─────────────────────────────╯
+╭─────────────────────────────╮
+│     *CODING COMMANDS*   
+├─────────────────────────────╯
+│ → carbon 
+│ → compile-c
+│ → compile-c++
+│ → compile-js
+│ → compile-py
+│ → inspect
+│ → encrypt
+│ → eval
+╰─────────────────────────────╯
 
-FOOTBALL
-- epl
-- laliga
-- serie-a
-- bundesliga
-- ligue-1
-- fixtures
+╭─────────────────────────────╮
+│     *GENERAL COMMANDS*   
+├─────────────────────────────╯
+│ → owner
+│ → script
+│ → menu
+│ → list
+│ → ping
+│ → poll
+│ → alive
+│ → speed
+│ → repo
+│ → runtime
+│ → uptime
+│ → dp
+│ → dlt
+│ → mail
+│ → inbox
+╰─────────────────────────────╯
+╭─────────────────────────────╮
+│     *OWNER COMMANDS*   
+├─────────────────────────────╯
+│ → restart
+│ → admin
+│ → cast 
+│ → broadcast
+│ → join
+│ → getvar
+│ → getcase
+│ → redeploy
+│ → update
+│ → setvar
+│ → botpp
+│ → fullpp
+│ → block
+│ → unblock
+│ → kill
+│ → kill2
+│ → save 
+╰─────────────────────────────╯
+╭─────────────────────────────╮
+│     *PRANK COMMANDS*   
+├─────────────────────────────╯
+│ → hack
+╰─────────────────────────────╯
+╭─────────────────────────────╮
+│     *LOGO COMMANDS*   
+├─────────────────────────────╯
+│ → hacker
+│ → hacker2
+│ → graffiti
+│ →cat 
+│ → sand
+│ → gold
+│ → arena
+│ → dragonball
+│ → naruto
+│ → child
+│ → leaves
+│ → 1917
+│ → typography
+╰─────────────────────────────╯
+╭─────────────────────────────╮
+│     *TEXTMAKER COMMANDS*   
+├─────────────────────────────╯
+│ → purple
+│ → neon
+│ → noel
+│ → metallic
+│ → devil
+│ → impressive
+│ → snow
+│ → water
+│ → thunder
+│ → ice
+│ → matrix
+│ → silver
+│ → light
 
-GPT / AI
-- ai
-- ai2
-- vision
-- define
-- raven
-- gemini
-- google
-- gpt
-- gpt2
-- gpt3
-- gpt4
+╰─────────────────────────────╯
+╭─────────────────────────────╮
+│     *UTILS COMMANDS*   
+├─────────────────────────────╯
+│ → weather
+│ → github
+│ → gitclone
+│ → removebg
+│ → remini
+│ → tts
+│ → trt
+│ → calc
 
-GROUP
-- approve
-- reject
-- promote
-- demote
-- delete
-- remove
-- faker
-- foreigners
-- close
-- open
-- closetime
-- opentime
-- disp-off
-- disp-1
-- disp-7
-- disp-90
-- icon
-- gcprofile
-- subject
-- desc
-- leave
-- add
-- tagall
-- hidetag
-- revoke
-- mute
-- unmute
+╰─────────────────────────────╯
+╭─────────────────────────────╮
+│     *RANDOM COMMANDS*   
+├─────────────────────────────╯
+│ → fact 
+│ → funfact
+│ → catfact
+│ → advice
+│ → joke
+│ → news
+│ → rship
+│ → gpass
+│ → anime
+│ → animegirl
+│ → quotes
+│ → pickupline
+╰─────────────────────────────╯
+╭─────────────────────────────╮
+│     *OTHER COMMANDS*   
+├─────────────────────────────╯
+│ → bible
+│ → quran
+│ → pair
+│ → credits
+│ → upload
+│ → attp
+│ → url
+│ → image
+│ → system
+╰─────────────────────────────╯
 
-CODING
-- carbon
-- compile-c
-- compile-c++
-- compile-js
-- compile-py
-- inspect
-- encrypt
-- eval
-
-GENERAL
-- owner
-- script
-- menu
-- list
-- ping
-- poll
-- alive
-- speed
-- repo
-- runtime
-- uptime
-- dp
-- dlt
-- mail
-- inbox
-
-OWNER
-- restart
-- admin
-- cast
-- broadcast
-- join
-- getvar
-- getcase
-- redeploy
-- update
-- setvar
-- botpp
-- fullpp
-- block
-- unblock
-- kill
-- kill2
-- save
-
-PRANK
-- hack
-
-LOGO
-- hacker
-- hacker2
-- graffiti
-- cat
-- sand
-- gold
-- arena
-- dragonball
-- naruto
-- child
-- leaves
-- 1917
-- typography
-
-TEXTMAKER
-- purple
-- neon
-- noel
-- metallic
-- devil
-- impressive
-- snow
-- water
-- thunder
-- ice
-- matrix
-- silver
-- light
-
-UTILS
-- weather
-- github
-- gitclone
-- removebg
-- remini
-- tts
-- trt
-- calc
-
-RANDOM
-- fact
-- funfact
-- catfact
-- advice
-- joke
-- news
-- rship
-- gpass
-- anime
-- animegirl
-- quotes
-- pickupline
-
-OTHER
-- bible
-- quran
-- pair
-- credits
-- upload
-- attp
-- url
-- image
-- system
 
 ───────────────
 Made with precision by OLALA
@@ -1066,7 +1100,7 @@ console.log(advice());
 break;
 //========================================================================================================================//
 		  case "updt": {
-			  const repo = "OLALA-TECH/OLALA-TEST";
+			  const repo = "olala-tech/OLALA-TECH-XMD";
     const botPath = path.join(__dirname, '..'); 
 
     try {
@@ -1076,7 +1110,7 @@ break;
       const latestCommit = res.data.sha;
 
       if (localCommit === latestCommit) {
-        await m.reply("✅ You're already running the latest version of Princess Ruby Bot.");
+        await m.reply("✅ You're already running the latest version of OLALA XMD Bot.");
       } else {
         await m.reply("♻️ New version available! Restarting to apply update...");
         
@@ -1418,7 +1452,7 @@ await client.sendMessage(from, {
                     `https://api.heroku.com/apps/${appname}/builds`,
                     {
                         source_blob: {
-                            url: "https://github.com/OLALA-TECH/OLALA-TEST/tarball/main",
+                            url: "https://github.com/OLALA-TECH/OLALA-TECH-XMD/tarball/main",
                         },
                     },
                     {
@@ -4164,7 +4198,7 @@ break;
 
     client.sendMessage(m.chat, { 
         image: { url: `https://files.catbox.moe/3k2jca.jpg` }, 
-        caption: `Hey *${pushname}* 👋,\n\nThis is the official 🌸 *OLALA XMD* GitHub repository.\n\n⭐ Feel free to fork the repo and give it a star to support development.\n\n🔗 Repository:\nhttps://github.com/OLALA-TECH/OLALA-TEST\n\n🔐 To connect your WhatsApp, generate a session using this link:\nhttps://OLALA-MINI-XMD.com\n\nAfter getting your SESSION string, place it inside the environment variables along with the required config values, then deploy 🚀.\n\nEnjoy exploring and running OLALA-TECH 💎\n\n— Built with ❤️ by OLALA-TECH`
+        caption: `Hey *${pushname}* 👋,\n\nThis is the official 🌸 *OLALA XMD* GitHub repository.\n\n⭐ Feel free to fork the repo and give it a star to support development.\n\n🔗 Repository:\nhttps://github.com/olala-tech/OLALA-TECH-XMD\n\n🔐 To connect your WhatsApp, generate a session using this link:\nhttps://olala-xmd-session.onrender.com/\n\nAfter getting your SESSION string, place it inside the environment variables along with the required config values, then deploy 🚀.\n\nEnjoy exploring and running OLALA-TECH 💎\n\n— Built with ❤️ by OLALA-TECH`
     }, { quoted: m });
 
     break;
