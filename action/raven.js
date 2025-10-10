@@ -627,40 +627,26 @@ let cap = `
 │ → quotely
 ╰─────────────────────────────╯
 ╭─────────────────────────────╮
-│     *CONVERT COMMANDS*       
+│     *SETTINGS COMMANDS*       
 ├─────────────────────────────╯
 ╭─────────────────────────────╮
-│ → 
-│ → 
-│ → 
-│ → 
-│ → 
-│ → 
-│ → 
-│ → 
-│ → 
-│ → 
-│ → 
-│ → 
+│ → antidelete
+│ → anticall
+│ → antibot
+│ → badword
+│ → antitag
+│ → antilink
+│ → antilinkall
+│ → gptdm
+│ → autoview
+│ → autolike
+│ → autoread
+│ → autobio
+│ → mode
+│ → prefix
+│ → welcomegoodbye
+│ → wapresence
 ╰─────────────────────────────╯
-
-SETTINGS
-- antidelete
-- anticall
-- antibot
-- badword
-- antitag
-- antilink
-- antilinkall
-- gptdm
-- autoview
-- autolike
-- autoread
-- autobio
-- mode
-- prefix
-- welcomegoodbye
-- wapresence
 
 FOOTBALL
 - epl
