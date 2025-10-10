@@ -613,28 +613,36 @@ let cap = `
 │     *CONVERT COMMANDS*       
 ├─────────────────────────────╯
 ╭─────────────────────────────╮
-│
-│ 
-│ 
-│ 
-│ 
-│ 
+│ → sticker
+│ → smeme
+│ → photo
+│ → mp4
+│ → retrieve
+│ → vv
+│ → vv2
+│ → screenshot
+│ → mix
+│ → take
+│ → tweet
+│ → quotely
 ╰─────────────────────────────╯
-
-
-CONVERT
-- sticker
-- smeme
-- photo
-- mp4
-- retrieve
-- vv
-- vv2
-- screenshot
-- mix
-- take
-- tweet
-- quotely
+╭─────────────────────────────╮
+│     *CONVERT COMMANDS*       
+├─────────────────────────────╯
+╭─────────────────────────────╮
+│ → 
+│ → 
+│ → 
+│ → 
+│ → 
+│ → 
+│ → 
+│ → 
+│ → 
+│ → 
+│ → 
+│ → 
+╰─────────────────────────────╯
 
 SETTINGS
 - antidelete
